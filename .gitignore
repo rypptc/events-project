@@ -1,14 +1,15 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# Node.js dependencies
 node_modules/
 
-# Expo
+# Expo specific
 .expo/
+.expo-shared/
 dist/
 web-build/
 
-# Native
+# Native files
 *.orig.*
 *.jks
 *.p8
@@ -16,20 +17,52 @@ web-build/
 *.key
 *.mobileprovision
 
-# Metro
+# Metro bundler
 .metro-health-check*
 
-# debug
+# Debug files
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
+# macOS system files
 .DS_Store
 *.pem
 
-# local env files
+# Local environment files
+.env
 .env*.local
 
-# typescript
+# TypeScript
 *.tsbuildinfo
+
+# Python cache and environment (optional, if you have backend code)
+__pycache__/
+*.py[cod]
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django database (optional, if applicable)
+*.sqlite3
+
+# Log files
+*.log
+
+# Temporary and backup files
+*.tmp
+*.bak
+
+# IDE specific files (optional, if you're using specific editors)
+.vscode/
+.idea/
+
+# Coverage and test results
+coverage/
+coverage.*
+.nyc_output/
