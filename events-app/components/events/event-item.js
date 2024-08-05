@@ -5,7 +5,7 @@ const EventItem = ({ id, title, description }) => {
     const navigation = useNavigation();
 
     const handlePress = () => {
-      navigation.navigate('EventDetail', { eventId: id });
+      navigation.navigate('EventDetail', { eventId: id, title, description });
     };
   
   return (
