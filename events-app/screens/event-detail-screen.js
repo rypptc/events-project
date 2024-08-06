@@ -10,7 +10,6 @@ const EventDetailScreen = () => {
       <Text style={{fontSize: 20}}>This is the event detail screen for {eventId}</Text>
       <Text style={{fontSize: 20}}>{title}</Text>
       <Text style={{fontSize: 20}}>{description}</Text>
-
     </View>
   );
 };
